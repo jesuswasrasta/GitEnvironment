@@ -9,12 +9,15 @@
 	autocrlf = true
 #	excludesfile = C:\\Users\\<Username>\\Documents\\gitignore_global.txt
 [alias]
+	# Shortcuts
 	st = status
-	co = checkout
 	cm = commit -m
 	caa = commit -a --amend -C HEAD
-	undo = reset --hard HEAD~1 
+	co = checkout
 	cob = checkout -b
+	# New commands
+	undo = reset --soft HEAD~1 
+	unstage = reset HEAD --
 	last = log -1 HEAD
 	sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
 [push]
