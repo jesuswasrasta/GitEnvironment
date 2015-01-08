@@ -1,0 +1,23 @@
+# Notes ---
+# This file must be placed in C:\Users\<Username>
+#----------
+
+[user]
+#	name = jesus-was-rasta
+#	email = 
+[core]
+	autocrlf = true
+#	excludesfile = C:\\Users\\<Username>\\Documents\\gitignore_global.txt
+[alias]
+	st = status
+	co = checkout
+	cm = commit -m
+	caa = commit -a --amend -C HEAD
+	undo = reset --hard HEAD~1 
+	cob = checkout -b
+	last = log -1 HEAD
+	sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
+[push]
+	default = matching
+[help]
+	autocorrect = 1
