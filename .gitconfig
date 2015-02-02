@@ -12,6 +12,7 @@
 	# Shortcuts
 	st = status
 	cm = commit -m
+	acm = !git add -A && git commit -m
 	caa = commit -a --amend -C HEAD
 	co = checkout
 	cob = checkout -b
