@@ -1,0 +1,5 @@
+# Like .gitignore file, but for every reposiotry
+# git config --global core.excludesfile ~/.gitexcludes
+.DS_Store
+Thumbs.db
+
