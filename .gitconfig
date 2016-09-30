@@ -26,4 +26,6 @@
 	default = matching
 [help]
 	autocorrect = 1
+[credential]
+	helper = manager
 

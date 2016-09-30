@@ -1,0 +1,56 @@
+# Notes ---
+# This file must be placed in C:\Users\<Username>
+#----------
+
+[user]
+	name = ferdinando.santacroce
+	email = santacroce@intre.it
+[core]
+	autocrlf = true
+#	excludesfile = C:\\Users\\<Username>\\Documents\\gitignore_global.txt
+[alias]
+	# Shortcuts
+	st = status
+	cm = commit -m
+	acm = !git add -A && git commit -m
+	caa = commit -a --amend -C HEAD
+	co = checkout
+	cob = checkout -b
+	# New commands
+	undo = reset --soft HEAD~1 
+	unstage = reset HEAD --
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	last = log -1 HEAD
+	sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
+[push]
+	default = matching
+[help]
+	autocorrect = 1
+[credential]Y
+	helper = manager
+	
+
+#[diff]
+#	tool = bc3
+#[difftool "bc3"]
+##	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe
+#	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe "$LOCAL" "$REMOTE" 
+#[merge]
+#	tool = bc3
+#[mergetool "bc3"]
+##	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe
+##	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+##	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe $LOCAL $REMOTE $BASE $MERGED
+#	path = C:/D/PortableApps/PortableApps/BeyondCompare3/bcomp.exe
+	
+	
+[merge]
+   tool = intellij
+[mergetool "intellij"]
+   cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+   trustExitCode = true
+[diff]
+   tool = intellij
+[difftool "intellij"]
+   cmd = idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+   #call it with "git mergetool -y"
