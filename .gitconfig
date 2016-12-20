@@ -21,7 +21,7 @@
 	unstage = reset HEAD --
 	tree = log --all --graph --decorate --pretty=oneline --abbrev-commit
 	last = log -1 HEAD
-	sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
+	#sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
 [push]
 	default = matching
 [help]
