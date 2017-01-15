@@ -13,9 +13,9 @@ PS1="$PS1"'\[\033[32m\]'       # change to green
 PS1="$PS1"'\u@\h '             # user@host<space>
 #PS1="$PS1"'\[\033[35m\]'      # change to purple
 PS1="$PS1"'\[\033[1;31m\]'     # change to light red
-PS1="$PS1"'[\#] '              # nando20170104: numero incementale che conta i comandi inviati, utili per fare screenshot spiegazioni comandi Git
-#PS1="$PS1"'$MSYSTEM '         # show MSYSTEM     #nando20170104: disabilito MGWIN nel prompt, che non me ne frega un razzo...
-PS1="$PS1"'\[\033[0;33m\]'       # change to brownish yellow
+PS1="$PS1"'[\#] '              # incremental number to count sent commands (useful for demoing purposes)
+#PS1="$PS1"'$MSYSTEM '         # don't show MSYSTEM, it's completely unuseful
+PS1="$PS1"'\[\033[0;33m\]'     # change to brownish yellow
 PS1="$PS1"'\w'                 # current working directory
 if test -z "$WINELOADERNOEXEC"
 then
