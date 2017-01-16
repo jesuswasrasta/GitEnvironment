@@ -11,8 +11,8 @@
 #------------------------------------------------------------------------
 
 [user]
-#	name = jesuswasrasta
-#	email = 
+    #Forces to set username and password to every new repository	
+	useconfigonly = true
 [core]
 	autocrlf = true
 #	excludesfile = C:\\Users\\<Username>\\Documents\\gitignore_global.txt
