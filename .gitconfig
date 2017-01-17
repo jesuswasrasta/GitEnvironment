@@ -29,7 +29,6 @@
 	unstage = reset HEAD --
 	lg = log --all --graph --decorate --abbrev-commit --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	last = log -1 HEAD
-	#sync = "!f(){ local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e \"s/* \\(.*\\)/\\1/\"`; git pull origin $branch && git push origin $branch; }; f" 
 [push]
 	default = matching
 [help]
