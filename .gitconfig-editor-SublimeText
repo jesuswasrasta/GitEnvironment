@@ -1,0 +1,17 @@
+# Notes -----------------------------------------------------------------
+# Using SublimeText as default editor
+# Obviously you have to install SublimeText before:
+#  - https://www.sublimetext.com/
+# -----------------------------------------------------------------------
+# Append these rows to yout .gitconfig file of choice 
+  (local, user, global); eg.:
+  - for user-wide config: C:\Users\<Username>\.gitconfig
+  - for repository-wide config: <your-repo-path\.git\config
+  
+  Too see where Git puts your configs (Git 2.8 or above):
+  $ git config --list --show-origin
+#------------------------------------------------------------------------
+
+[core]
+	editor = subl -n -w
+
