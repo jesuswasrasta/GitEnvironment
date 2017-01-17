@@ -19,3 +19,11 @@ For istance, themes are in <home>\.mintty\themes.
 
 Copy there the content of the user folder in this repo
 to use these MinTTY configurations.
+
+##Customizing Bash prompt
+I don't like user@computer stuff in Bash prompt, nor
+the unuseful MINGW string, so I deleted them.
+To modify default Git Bash prompt, edit this file:
+C:\Program Files\Git\etc\profile.d\git-prompt.sh
+
+Here there is mine.
