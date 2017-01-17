@@ -1,10 +1,15 @@
-# Notes ---
-# This files contains configs to set Visual Studio 2013 
-# vsdiffmerge tool as the default difftool and mergetool
-#
-# This file must be placed in <RepositoryFolder>\.git
-#----------
-
+# Notes -----------------------------------------------------------------
+# Using Visual Studio 2013 vsdiffmerge tool 
+# as the default difftool and mergetool
+# -----------------------------------------------------------------------
+# Append these rows to yout .gitconfig file of choice 
+  (local, user, global); eg.:
+  - for user-wide config: C:\Users\<Username>\.gitconfig
+  - for repository-wide config: <your-repo-path\.git\config
+  
+  Too see where Git puts your configs (Git 2.8 or above):
+  $ git config --list --show-origin
+#------------------------------------------------------------------------
 
 [diff]
 	tool = vsdiffmerge
