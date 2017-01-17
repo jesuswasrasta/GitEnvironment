@@ -1,8 +1,11 @@
 # GitEnvironment
 My personal Git setup for Windows (Git aliases, Bash shell aliases and so on)
 
-##How to install
-Copy these files in C:\Users\<your username>
+##
+Starting from here, consider <home> as your user folder (C:\Users\<username>)
+
+##How to use
+Copy/merge these files in <home> folder:
 * .bash_profile
 * .bashrc
 * .gitattributes
