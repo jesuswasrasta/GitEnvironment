@@ -1,0 +1,8 @@
+BoldAsFont=no
+Font=Consolas
+FontHeight=12
+Columns=150
+Rows=45
+ThemeFile=base16-monokai-mod.minttyrc
+ClicksPlaceCursor=yes
+PgUpDnScroll=yes
