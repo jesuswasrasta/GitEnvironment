@@ -12,3 +12,10 @@ Copy/merge these files in <home> folder:
 * .gitconfig
 * .gitexcludes
 
+##MinTTY
+MinTTY saves its configuration into <home>\.minttyrc file
+Then it saves other stuff into <home>\.mintty\ folder;
+For istance, themes are in <home>\.mintty\themes.
+
+Copy there the content of the user folder in this repo
+to use these MinTTY configurations.
