@@ -1,3 +1,14 @@
+
+
+
+> **DISCLAIMER**  
+> This is an old repo.  
+> I changed my strategy a while ago.  
+> [Here the new repo](https://github.com/jesuswasrasta/dotfiles)
+
+
+
+
 # GitEnvironment
 My personal Git setup for Windows (Git aliases, Bash shell aliases and so on)
 
